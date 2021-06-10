@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -35,9 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-
-- name: Twilio SMS
-  uses: twilio-labs/actions-sms@v1
 - name: 'Sending SMS Notification'
   uses: twilio-labs/actions-sms@v1-alpha
   with:
